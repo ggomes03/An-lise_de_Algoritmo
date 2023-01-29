@@ -20,3 +20,17 @@ def random_unique_int_list(quantidade): # muito lento
 
 def random_unique_int_list_sample(quantidade): # bom 
     return random.sample(range(quantidade * 3), quantidade)
+
+def cria_lista_quase_ordenada(tamanho):
+    lista = [i for i in range(tamanho)]
+    for i in range(tamanho//10):
+        a = random.randint(0, tamanho-1)
+        b = random.randint(0, tamanho-1)
+        lista[a], lista[b] = lista[b], lista[a]
+    return lista
+
+def cria_lista_inversamente_ordenada(tamanho):
+    return list(range(tamanho-1, -1, -1))
+
+def cria_lista_ordenada(tamanho):
+    return list(range(tamanho))
