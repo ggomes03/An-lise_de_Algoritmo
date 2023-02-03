@@ -1,19 +1,19 @@
 def CorrigeHeapSort(arr, n, i):
-    largest = i
-    left = 2 * i + 1
-    right = 2 * i + 2
+    maior = i
+    esq = 2 * i + 1
+    dir = 2 * i + 2
 
-    if left < n and arr[i] < arr[left]:
-        largest = left
+    if esq < n and arr[i] < arr[esq]:
+        maior = esq
 
-    if right < n and arr[largest] < arr[right]:
-        largest = right
+    if dir < n and arr[maior] < arr[dir]:
+        maior = dir
 
-    if largest != i:
+    if maior != i:
         aux = arr[i]
-        arr[i] = arr[largest]
-        arr[largest] = aux
-        CorrigeHeapSort(arr, n, largest)
+        arr[i] = arr[maior]
+        arr[maior] = aux
+        CorrigeHeapSort(arr, n, maior)
 
 
 def heap_sort(arr):

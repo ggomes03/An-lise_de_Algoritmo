@@ -4,5 +4,9 @@ def selection_sort(lista):
         for j in range(i+1, len(lista)):
             if lista[j] < lista[min_index]:
                 min_index = j
-        lista[i], lista[min_index] = lista[min_index], lista[i]
+        aux = lista[min_index]
+        lista[min_index] = lista[i]
+        lista[i] = aux
     return lista
+
+    

@@ -2,7 +2,7 @@
     "python.analysis.extraPaths": [
         // "./listas/ordenadas",
         // "./listas/inversamente",
-        "./listas/aleatorias",
+        // "./listas/aleatorias",
         // "./listas/quaseOrdenadas",
         "./algoritmos"
     ]

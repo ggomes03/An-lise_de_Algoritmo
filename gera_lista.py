@@ -18,7 +18,7 @@ def random_unique_int_list(quantidade): # muito lento
     return int_list
 
 
-def random_unique_int_list_sample(quantidade): # bom 
+def cria_lista_aleatoria(quantidade): # bom 
     return random.sample(range(quantidade * 3), quantidade)
 
 def cria_lista_quase_ordenada(tamanho):
@@ -34,3 +34,4 @@ def cria_lista_inversamente_ordenada(tamanho):
 
 def cria_lista_ordenada(tamanho):
     return list(range(tamanho))
+

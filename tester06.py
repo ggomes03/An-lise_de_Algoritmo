@@ -1,12 +1,14 @@
 import sys
 import os
 
+# sys.path.append(os.path.join(os.path.dirname("./"), "algoritmos"))
 # sys.path.append(os.path.join(os.path.dirname("listas/"), "inversamente"))
-sys.path.append(os.path.join(os.path.dirname("listas/"), "aleatorias"))
-sys.path.append(os.path.join(os.path.dirname("./"), "algoritmos"))
+# sys.path.append(os.path.join(os.path.dirname("listas/"), "aleatorias"))
 # sys.path.append(os.path.join(os.path.dirname("listas/"), "ordenadas"))
 # sys.path.append(os.path.join(os.path.dirname("listas/"), "quaseOrdenadas"))
-import Flista1M
+
+# import Flista1M
+
 # import bubblesort
 # import insertionsort
 # import selectionsort
@@ -14,7 +16,8 @@ import Flista1M
 # import heapsort
 # import mergesort
 
-lista = Flista1M.lista
+
+# lista = Flista1M.lista
 
 # print(bubblesort.bubble_sort(lista))
 # print(insertionsort.insertion_sort(lista))
